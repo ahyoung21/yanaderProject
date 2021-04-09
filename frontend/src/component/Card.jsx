@@ -4,10 +4,21 @@ import axios from 'axios';
 const Card = () => {
   const [data, setData] = useState(null);
 
-  const handleClick = () => {
-    axios.get('https://jsonplaceholder.typicode.com/posts').then((response) => {
+  // const handleClick = () => {
+  //   axios.get('https://jsonplaceholder.typicode.com/posts').then((response) => {
+  //     setData(response.data);
+  //   });
+  // };
+
+  const handleClick = async () => {
+    try {
+      const response = await axios.get(
+        'https://jsonplaceholder.typicode.com/posts'
+      );
       setData(response.data);
-    });
+    } catch (e) {
+      console.log('error');
+    }
   };
 
   // handleClick();
