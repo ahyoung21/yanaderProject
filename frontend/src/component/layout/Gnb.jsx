@@ -1,6 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Button from '../contents/Button';
+import GnbData from '../json/GnbData.json';
 
 const Gnb = () => {
+  const [button, setButton] = useState('click!');
+  const [data, setData] = useState([]);
+
+  // const onClickButton = useCallback(() => {
+  //   setButton('clicked');
+  // }, [button]);
+
+  // useEffect(() => {
+  //   const newArray = GnbData.map((item, index) => {
+  //     return <li key={index}>{item.text}</li>;
+  //   });
+  //   console.log(newArray);
+  // }, []);
+
+  const onClickGetUsers = async () => {
+    // await, async 로 비동기 통신
+    // let url = 'https://api.github.com/users/ahyoung21';
+    // let response = await fetch(url);
+    // let infoLists = await response.json();
+
+    // setData(infoLists);
+
+    // Promise then 으로 비동기통신
+    console.log('start');
+    fetch('https://jsonplaceholder.typicode.com/users') //
+      .then((response) => response.json())
+      .catch((error) => console.log(error.message))
+      .then((userlists) => {
+        setData(userlists);
+        console.log(userlists);
+      });
+    console.log('end');
+  };
+
   return (
     <>
       <a
@@ -13,12 +49,18 @@ const Gnb = () => {
         />
       </a>
       <ul>
-        <li>특징</li>
-        <li>제품 가이드</li>
-        <li>가격</li>
-        <li>Enterprise</li>
+        {GnbData &&
+          GnbData.map((item, index) => {
+            return <li key={index}>{item.text}</li>;
+          })}
       </ul>
-      <button className="btn">무료로 시작</button>
+      <Button onClick={onClickGetUsers} buttonTxt={button} />
+      <ul>
+        {data &&
+          data.map((item) => {
+            return <li key={item.id}>{item.username}</li>;
+          })}
+      </ul>
     </>
   );
 };

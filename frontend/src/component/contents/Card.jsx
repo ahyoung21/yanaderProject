@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Card = () => {
@@ -21,7 +21,27 @@ const Card = () => {
     }
   };
 
+  // useEffect(() => {
+  //   axios
+  //     .get('https://jsonplaceholder.typicode.com/posts')
+  //     .then((response) => {
+  //       setData(response.data);
+  //     })
+  //     .catch(new Error('error'));
+  // }, []);
+
+  // const handleClick = (number) => {
+  //   console.log('hi');
+  //   return new Promise((resolve, reject) => {
+  //     setTimeout(() => {
+  //       const result = number + 10;
+  //       resolve(result);
+  //     }, 1000);
+  //   });
+  // };
+
   // handleClick();
+  // console.log(typeof data);
   return (
     <>
       <ul>
@@ -39,7 +59,7 @@ const Card = () => {
             );
           })}
       </ul>
-      <button onClick={handleClick}>api불러오기</button>
+      <butto onClick={handleClick}>api불러오기</butto>
     </>
   );
 };

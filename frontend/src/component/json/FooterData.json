@@ -1,0 +1,38 @@
+[
+  {
+    "title": "제품",
+    "list": [
+      { "link": "제품링크1", "title": "Jira Software" },
+      { "link": "제품링크2", "title": "Jira Align" },
+      { "link": "제품링크3", "title": "Jira Service Management" },
+      { "link": "제품링크4", "title": "Confluence" },
+      { "link": "제품링크5", "title": "Trello" },
+      { "link": "제품링크6", "title": "Bitbucket" },
+      { "link": "제품링크7", "title": "모든 제품 보기" }
+    ]
+  },
+  {
+    "title": "제품2",
+    "list": [
+      { "link": "제품링크1", "title": "Jira Software" },
+      { "link": "제품링크2", "title": "Jira Align" },
+      { "link": "제품링크3", "title": "Jira Service Management" },
+      { "link": "제품링크4", "title": "Confluence" },
+      { "link": "제품링크5", "title": "Trello" },
+      { "link": "제품링크6", "title": "Bitbucket" },
+      { "link": "제품링크7", "title": "모든 제품 보기" }
+    ]
+  },
+  {
+    "title": "제품3",
+    "list": [
+      { "link": "제품링크1", "title": "Jira Software" },
+      { "link": "제품링크2", "title": "Jira Align" },
+      { "link": "제품링크3", "title": "Jira Service Management" },
+      { "link": "제품링크4", "title": "Confluence" },
+      { "link": "제품링크5", "title": "Trello" },
+      { "link": "제품링크6", "title": "Bitbucket" },
+      { "link": "제품링크7", "title": "모든 제품 보기" }
+    ]
+  }
+]
