@@ -59,7 +59,7 @@ const Card = () => {
             );
           })}
       </ul>
-      <butto onClick={handleClick}>api불러오기</butto>
+      <button onClick={handleClick}>api불러오기</button>
     </>
   );
 };
