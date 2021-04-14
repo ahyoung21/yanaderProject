@@ -1,6 +1,6 @@
 import React from 'react';
-import Table from './Table';
 import Title from './Title';
+import TableBox from './TableBox';
 
 const Visual = () => {
   return (
@@ -13,7 +13,7 @@ const Visual = () => {
         style={{ display: 'inline-block', width: 374, textAlign: 'center' }}
         src='https://wac-cdn.atlassian.com/dam/jcr:a7960549-075b-411c-b61a-285cd071b807/Create,Share-Team%20Onboarding.svg?cdnVersion=1547'
       />
-      <Table />
+      <TableBox />
     </div>
   );
 };
