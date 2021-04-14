@@ -1,38 +1,50 @@
 [
   {
-    "title": "제품",
+    "menuName": "제품",
     "list": [
-      { "link": "제품링크1", "title": "Jira Software" },
-      { "link": "제품링크2", "title": "Jira Align" },
-      { "link": "제품링크3", "title": "Jira Service Management" },
-      { "link": "제품링크4", "title": "Confluence" },
-      { "link": "제품링크5", "title": "Trello" },
-      { "link": "제품링크6", "title": "Bitbucket" },
-      { "link": "제품링크7", "title": "모든 제품 보기" }
+      { "link": "제품 링크1", "subMenuName": "Jira Software" },
+      { "link": "제품 링크2", "subMenuName": "Jira Align" },
+      { "link": "제품 링크3", "subMenuName": "Jira Service Management" },
+      { "link": "제품 링크4", "subMenuName": "Confluence" },
+      { "link": "제품 링크5", "subMenuName": "Trello" },
+      { "link": "제품 링크6", "subMenuName": "Bitbucket" },
+      { "link": "제품 링크7", "subMenuName": "모든 제품 보기" }
     ]
   },
   {
-    "title": "제품2",
+    "menuName": "리소스",
     "list": [
-      { "link": "제품링크1", "title": "Jira Software" },
-      { "link": "제품링크2", "title": "Jira Align" },
-      { "link": "제품링크3", "title": "Jira Service Management" },
-      { "link": "제품링크4", "title": "Confluence" },
-      { "link": "제품링크5", "title": "Trello" },
-      { "link": "제품링크6", "title": "Bitbucket" },
-      { "link": "제품링크7", "title": "모든 제품 보기" }
+      { "link": "리소스 링크1", "subMenuName": "기술 지원" },
+      { "link": "리소스 링크2", "subMenuName": "구매 및 라이센싱" },
+      { "link": "리소스 링크3", "subMenuName": "Atlassian 커뮤니티" },
+      { "link": "리소스 링크4", "subMenuName": "지식 베이스" },
+      { "link": "리소스 링크5", "subMenuName": "Marketplace" },
+      { "link": "리소스 링크6", "subMenuName": "내 계정" },
+      { "link": "리소스 링크7", "subMenuName": "지원 티켓 생성하기" }
     ]
   },
   {
-    "title": "제품3",
+    "menuName": "확장 및 학습",
     "list": [
-      { "link": "제품링크1", "title": "Jira Software" },
-      { "link": "제품링크2", "title": "Jira Align" },
-      { "link": "제품링크3", "title": "Jira Service Management" },
-      { "link": "제품링크4", "title": "Confluence" },
-      { "link": "제품링크5", "title": "Trello" },
-      { "link": "제품링크6", "title": "Bitbucket" },
-      { "link": "제품링크7", "title": "모든 제품 보기" }
+      { "link": "확장 및 학습 링크1", "subMenuName": "파트너" },
+      { "link": "확장 및 학습 링크2", "subMenuName": "교육 및 인증" },
+      { "link": "확장 및 학습 링크3", "subMenuName": "기술문서 및 매뉴얼" },
+      { "link": "확장 및 학습 링크4", "subMenuName": "개발자 리소스" },
+      { "link": "확장 및 학습 링크5", "subMenuName": "구매 관련 FAQ" },
+      { "link": "확장 및 학습 링크6", "subMenuName": "Enterprise 서비스" },
+      { "link": "확장 및 학습 링크7", "subMenuName": "모든 리소스 보기" }
+    ]
+  },
+  {
+    "menuName": "ATLASSIAN 소개",
+    "list": [
+      { "link": "ATLASSIAN 소개 링크1", "subMenuName": "회사" },
+      { "link": "ATLASSIAN 소개 링크2", "subMenuName": "구직" },
+      { "link": "ATLASSIAN 소개 링크3", "subMenuName": "이벤트" },
+      { "link": "ATLASSIAN 소개 링크4", "subMenuName": "블로그" },
+      { "link": "ATLASSIAN 소개 링크5", "subMenuName": "투자자 관계" },
+      { "link": "ATLASSIAN 소개 링크6", "subMenuName": "신뢰 및 보안" },
+      { "link": "ATLASSIAN 소개 링크7", "subMenuName": "연락처" }
     ]
   }
 ]

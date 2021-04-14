@@ -6,6 +6,7 @@ const Faqcard = () => {
       <ul>
         <li>
           <img
+            style={{ width: 100 }}
             src="https://wac-cdn.atlassian.com/dam/jcr:ede71922-35b1-4429-bcfe-8d0ff7c0acb7/Security.svg?cdnVersion=1548"
             alt=""
           />
@@ -18,6 +19,7 @@ const Faqcard = () => {
         </li>
         <li>
           <img
+            style={{ width: 100 }}
             src="https://wac-cdn.atlassian.com/dam/jcr:78fb8b00-7733-4e8c-9200-9d6cd016e2e6/Trust%20and%20Security.svg?cdnVersion=1548"
             alt=""
           />

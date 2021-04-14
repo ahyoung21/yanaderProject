@@ -1,12 +1,17 @@
 .title {
   display: block;
-  font-size: 30px;
+  font-size: 24px;
+  color: #253858;
   text-align: center;
 }
 
 .desc {
-  margin-top: 10px;
-  font-size: 25px;
+  width: 90%;
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #42526e;
   text-align: center;
 }
 
@@ -18,6 +23,45 @@ li {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.section-resource {
+  width: 800px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: #e6fcff;
+  text-align: center;
+}
+
+.section-resource strong {
+  padding-bottom: 20px;
+  font-size: 24px;
+  color: #111;
+}
+.section-resource p {
+  font-size: 16px;
+  color: #111;
+}
+.section-resource ul {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.section-resource li {
+  float: left;
+  width: 30%;
+  margin-right: 3%;
+  line-height: 1.6;
+  text-align: left;
+}
+.section-resource li a {
+  display: block;
+  font-size: 14px;
+  color: #0052cc;
+  text-align: left;
+}
+
+.section-resource a:hover {
+  text-decoration: underline;
 }
 
 footer {
