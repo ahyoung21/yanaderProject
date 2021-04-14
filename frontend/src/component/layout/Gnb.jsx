@@ -38,7 +38,7 @@ const Gnb = () => {
   };
 
   return (
-    <>
+    <div className='gnb'>
       <a
         href='https://www.atlassian.com/ko/software/jira/guides'
         target='_blank'
@@ -61,7 +61,7 @@ const Gnb = () => {
             return <li key={item.id}>{item.username}</li>;
           })}
       </ul>
-    </>
+    </div>
   );
 };
 
