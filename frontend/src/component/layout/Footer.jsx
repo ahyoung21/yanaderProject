@@ -1,53 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import FooterData from '../json/FooterData.json';
-// import axios from 'axios';
 
 const Footer = () => {
   const [data, setData] = useState([]);
-  // const menus = ['Menu1', 'Menu2', 'Menu3', 'Menu4'];
-  // const menuList = menus.map((menu, index) => <li key={index}>{menu}</li>);
-
-  // function FooterList(props) {
-  //   const footerInfo = props.footerInfo;
-  //   const listItems = footerInfo.map((item, index) => (
-  //     <li key={index}>
-  //       <strong>{item.title}</strong>
-  //     </li>
-  //   ));
-  //   return <ul>{listItems}</ul>;
-  // }
-
-  // {people.filter(person => person.age < 60).map(filteredPerson => (
-  //   <li>
-  //     {filteredPerson.name}
-  //   </li>
-  // ))}
-
-  // function ListItem(props) {
-  //   const footerInfo = props.footerInfo;
-  //   return (
-  //     <li>
-  //       <strong>{props.title}</strong>
-  //       <ul>
-  //         <a href={props.link}>{props.menuName}</a>
-  //       </ul>
-  //     </li>
-  //   );
-  // }
-
-  // function FooterList(props) {
-  //   const footerInfo = props.footerInfo;
-  //   const listItems = footerInfo.map((item, index) => {
-  //     <ListItem
-  //       key={index}
-  //       title={item.title}
-  //       link={item.list[1].link}
-  //       menuName={item.list[1].title}
-  //     />;
-  //   });
-  //   return <ul>{listItems}</ul>;
-  // }
-
   return (
     <>
       <footer>
@@ -59,16 +14,45 @@ const Footer = () => {
             {FooterData &&
               FooterData.map((item, index) => {
                 return (
-                  <li
-                    key={index}
-                    title={item.title}
-                    link={item.list[index].link}
-                    menuName={item.list[index].title}
-                  >
-                    {item.title}
-                    {item.list[index].link}
-                    {item.list[index].title}
-                    {item.list.length}
+                  <li key={index}>
+                    <strong>{item.menuName}</strong>
+                    <ul>
+                      <li>
+                        <a href={item.list[0].link}>
+                          {item.list[0].subMenuName}
+                        </a>
+                      </li>
+                      <li>
+                        <a href={item.list[1].link}>
+                          {item.list[1].subMenuName}
+                        </a>
+                      </li>
+                      <li>
+                        <a href={item.list[2].link}>
+                          {item.list[2].subMenuName}
+                        </a>
+                      </li>
+                      <li>
+                        <a href={item.list[3].link}>
+                          {item.list[3].subMenuName}
+                        </a>
+                      </li>
+                      <li>
+                        <a href={item.list[4].link}>
+                          {item.list[4].subMenuName}
+                        </a>
+                      </li>
+                      <li>
+                        <a href={item.list[5].link}>
+                          {item.list[5].subMenuName}
+                        </a>
+                      </li>
+                      <li>
+                        <a href={item.list[6].link}>
+                          {item.list[6].subMenuName}
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                 );
               })}
