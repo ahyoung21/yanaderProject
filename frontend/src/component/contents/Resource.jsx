@@ -3,7 +3,7 @@ import React from 'react';
 const Resource = () => {
   return (
     <>
-      <div className="section-resource">
+      <section className="section-resource">
         <strong>추가 리소스</strong>
         <p>
           이러한 리소스를 즐겨찾기에 연결하여 동료 Jira Software 사용자와 연결
@@ -21,7 +21,7 @@ const Resource = () => {
             새 소식 보기 <a href="#">자세히 보기</a>
           </li>
         </ul>
-      </div>
+      </section>
     </>
   );
 };
