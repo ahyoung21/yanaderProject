@@ -40,12 +40,12 @@ const Gnb = () => {
   return (
     <>
       <a
-        href="https://www.atlassian.com/ko/software/jira/guides"
-        target="_blank"
+        href='https://www.atlassian.com/ko/software/jira/guides'
+        target='_blank'
       >
         <img
           style={{ width: 215 }}
-          src="https://wac-cdn.atlassian.com/dam/jcr:e348b562-4152-4cdc-8a55-3d297e509cc8/Jira%20Software-blue.svg?cdnVersion=1547"
+          src='https://wac-cdn.atlassian.com/dam/jcr:e348b562-4152-4cdc-8a55-3d297e509cc8/Jira%20Software-blue.svg?cdnVersion=1547'
         />
       </a>
       <ul>
