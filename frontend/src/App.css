@@ -96,6 +96,10 @@ a {
   text-decoration: none;
 }
 
+section {
+  min-width: 1060px;
+}
+
 .section-guide {
   padding: 90px 0 30px;
 }
@@ -149,7 +153,7 @@ a {
   position: relative;
   width: 30%;
   height: 440px;
-  margin: auto 1.5%;
+  margin: auto 1.56%;
   padding: 40px 30px 60px 30px;
   border: 1px solid #ccc;
   border-radius: 15px;
@@ -189,11 +193,28 @@ a {
 }
 
 .section-resource {
-  width: 800px;
   margin: 50px auto;
+}
+.section-resource .resource-box {
+  width: 800px;
+  margin: 0 auto;
   padding: 25px;
   background-color: #e6fcff;
   text-align: center;
+}
+
+.section-resource button {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 5px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  background-color: #333;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
 .section-resource strong {
@@ -212,7 +233,7 @@ a {
 .section-resource li {
   float: left;
   width: 30%;
-  margin-right: 3%;
+  margin-left: 3%;
   line-height: 1.6;
   text-align: left;
 }

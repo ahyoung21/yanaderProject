@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import FooterData from '../json/FooterData.json';
 
+// const Footer = function () {}
+
 const Footer = () => {
-  const [data, setData] = useState([]);
   return (
     <>
       <footer>
