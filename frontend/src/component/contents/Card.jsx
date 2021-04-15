@@ -44,7 +44,7 @@ const Card = () => {
   // handleClick();
   // console.log(typeof data);
   return (
-    <div className='card'>
+    <div className="card">
       <Title
         title={'Jira Software 시작하기'}
         desc={
@@ -56,17 +56,17 @@ const Card = () => {
           data.map((item) => {
             return (
               <li key={item.id}>
-                <img src='https://wac-cdn.atlassian.com/dam/jcr:2ed4d99c-a07c-4795-8212-3452e3e1fd94/book-lightbulb.svg?cdnVersion=1547' />
+                <img src="https://wac-cdn.atlassian.com/dam/jcr:2ed4d99c-a07c-4795-8212-3452e3e1fd94/book-lightbulb.svg?cdnVersion=1547" />
                 <strong>{item.key}</strong>
                 <p>{item.title}</p>
-                <a href='#;' className='btn-move'>
+                <a href="#;" className="btn-move">
                   가이드로 이동
                 </a>
               </li>
             );
           })}
       </ul>
-      <button onClick={handleClick}>api불러오기</button>
+      <button onClick={handleClick}>card lists 불러오기</button>
     </div>
   );
 };

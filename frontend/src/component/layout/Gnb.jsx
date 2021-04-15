@@ -3,7 +3,7 @@ import Button from '../contents/Button';
 import GnbData from '../json/GnbData.json';
 
 const Gnb = () => {
-  const [button, setButton] = useState('click!');
+  const [button, setButton] = useState('데이터 불러오기');
   const [data, setData] = useState([]);
 
   // const onClickButton = useCallback(() => {
@@ -38,30 +38,32 @@ const Gnb = () => {
   };
 
   return (
-    <div className='gnb'>
-      <a
-        href='https://www.atlassian.com/ko/software/jira/guides'
-        target='_blank'
-      >
-        <img
-          style={{ width: 215 }}
-          src='https://wac-cdn.atlassian.com/dam/jcr:e348b562-4152-4cdc-8a55-3d297e509cc8/Jira%20Software-blue.svg?cdnVersion=1547'
-        />
-      </a>
-      <ul>
-        {GnbData &&
-          GnbData.map((item, index) => {
-            return <li key={index}>{item.text}</li>;
-          })}
-      </ul>
-      <Button onClick={onClickGetUsers} buttonTxt={button} />
-      <ul>
+    <header className="header">
+      <div className="gnb">
+        <a
+          href="https://www.atlassian.com/ko/software/jira/guides"
+          target="_blank"
+        >
+          <img
+            style={{ width: 215 }}
+            src="https://wac-cdn.atlassian.com/dam/jcr:e348b562-4152-4cdc-8a55-3d297e509cc8/Jira%20Software-blue.svg?cdnVersion=1547"
+          />
+        </a>
+        <ul>
+          {GnbData &&
+            GnbData.map((item, index) => {
+              return <li key={index}>{item.text}</li>;
+            })}
+        </ul>
+        <Button onClick={onClickGetUsers} buttonTxt={button} />
+      </div>
+      <ul className="data-lists">
         {data &&
           data.map((item) => {
             return <li key={item.id}>{item.username}</li>;
           })}
       </ul>
-    </div>
+    </header>
   );
 };
 
