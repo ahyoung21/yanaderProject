@@ -93,7 +93,7 @@ const TableBox = () => {
             </>
           )}
         />
-        <Column
+        {/* <Column
           title="Action"
           key="action"
           render={(text, record) => (
@@ -102,7 +102,7 @@ const TableBox = () => {
               <a>Delete</a>
             </Space>
           )}
-        />
+        /> */}
       </Table>
     </>
   );
