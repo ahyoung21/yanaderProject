@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from './Title';
+import GuideData from '../json/GuideData.json';
 
 const Guide = () => {
   return (
@@ -18,27 +19,15 @@ const Guide = () => {
           </dt>
           <dd>
             <ul>
-              <li>
-                <strong>Jira Software Cloud 데모</strong>
-                <a href="#">
-                  Jira Software Cloud 시작하는 방법 알아보기(실시간 Q&A 옵션
-                  제공)
-                </a>
-              </li>
-              <li>
-                <strong>애자일 자습서</strong>
-                <a href="#">
-                  이 자습서를 통해 Jira Software Cloud 클래식 프로젝트의
-                  애자일에 대해 알아보기
-                </a>
-              </li>
-              <li>
-                <strong>Jira 관리</strong>
-                <a href="#">
-                  무료 Jira 관리자 가이드를 살펴보거나 Atlassian의 관리자 인증
-                  과정 수강하기
-                </a>
-              </li>
+              {GuideData &&
+                GuideData.map((item) => {
+                  return (
+                    <li key={item.id}>
+                      <strong>{item.title}</strong>
+                      <a href="#">{item.content}</a>
+                    </li>
+                  );
+                })}
             </ul>
           </dd>
         </dl>
