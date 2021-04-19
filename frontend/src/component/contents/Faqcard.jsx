@@ -9,15 +9,11 @@ const Faqcard = () => {
     axios
       .get('https://hyunsusora.github.io/jsondata/guide.json')
       .then(function (result) {
-        faqData(result.data);
         console.log('응답 성공');
       })
       .catch(function (error) {
         console.log('응답 실패');
       })
-      .then(function () {
-        console.log('결과에 관계없이 실행');
-      });
   };
 
   useEffect(async () => {
