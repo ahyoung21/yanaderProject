@@ -13,46 +13,23 @@ const Footer = () => {
           </h1>
           <ul>
             {FooterData &&
-              FooterData.map((item, index) => {
+              FooterData.map((item) => {
                 return (
-                  <li key={index}>
+                  <li key={item.id}>
                     <strong>{item.menuName}</strong>
                     <ul>
-                      <li>
-                        <a href={item.list[0].link}>
-                          {item.list[0].subMenuName}
-                        </a>
-                      </li>
-                      <li>
-                        <a href={item.list[1].link}>
-                          {item.list[1].subMenuName}
-                        </a>
-                      </li>
-                      <li>
-                        <a href={item.list[2].link}>
-                          {item.list[2].subMenuName}
-                        </a>
-                      </li>
-                      <li>
-                        <a href={item.list[3].link}>
-                          {item.list[3].subMenuName}
-                        </a>
-                      </li>
-                      <li>
-                        <a href={item.list[4].link}>
-                          {item.list[4].subMenuName}
-                        </a>
-                      </li>
-                      <li>
-                        <a href={item.list[5].link}>
-                          {item.list[5].subMenuName}
-                        </a>
-                      </li>
-                      <li>
-                        <a href={item.list[6].link}>
-                          {item.list[6].subMenuName}
-                        </a>
-                      </li>
+                      {
+                        FooterData[item.id - 1] &&
+                          FooterData[item.id - 1].list.map((subItem) => {
+                          return (
+                            <li key={subItem.id}>
+                              <a href={subItem.link}>
+                                {subItem.subMenuName}
+                              </a>
+                            </li>
+                          );
+                        })
+                      }
                     </ul>
                   </li>
                 );

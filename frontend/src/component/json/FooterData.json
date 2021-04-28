@@ -1,50 +1,54 @@
 [
   {
+    "id":1,
     "menuName": "제품",
     "list": [
-      { "link": "제품 링크1", "subMenuName": "Jira Software" },
-      { "link": "제품 링크2", "subMenuName": "Jira Align" },
-      { "link": "제품 링크3", "subMenuName": "Jira Service Management" },
-      { "link": "제품 링크4", "subMenuName": "Confluence" },
-      { "link": "제품 링크5", "subMenuName": "Trello" },
-      { "link": "제품 링크6", "subMenuName": "Bitbucket" },
-      { "link": "제품 링크7", "subMenuName": "모든 제품 보기" }
+      { "id": 1, "link": "제품 링크1", "subMenuName": "Jira Software" },
+      { "id": 2, "link": "제품 링크2", "subMenuName": "Jira Align" },
+      { "id": 3, "link": "제품 링크3", "subMenuName": "Jira Service Management" },
+      { "id": 4, "link": "제품 링크4", "subMenuName": "Confluence" },
+      { "id": 5, "link": "제품 링크5", "subMenuName": "Trello" },
+      { "id": 6, "link": "제품 링크6", "subMenuName": "Bitbucket" },
+      { "id": 7, "link": "제품 링크7", "subMenuName": "모든 제품 보기" }
     ]
   },
   {
+    "id":2,
     "menuName": "리소스",
     "list": [
-      { "link": "리소스 링크1", "subMenuName": "기술 지원" },
-      { "link": "리소스 링크2", "subMenuName": "구매 및 라이센싱" },
-      { "link": "리소스 링크3", "subMenuName": "Atlassian 커뮤니티" },
-      { "link": "리소스 링크4", "subMenuName": "지식 베이스" },
-      { "link": "리소스 링크5", "subMenuName": "Marketplace" },
-      { "link": "리소스 링크6", "subMenuName": "내 계정" },
-      { "link": "리소스 링크7", "subMenuName": "지원 티켓 생성하기" }
+      { "id": 1, "link": "리소스 링크1", "subMenuName": "기술 지원" },
+      { "id": 2, "link": "리소스 링크2", "subMenuName": "구매 및 라이센싱" },
+      { "id": 3, "link": "리소스 링크3", "subMenuName": "Atlassian 커뮤니티" },
+      { "id": 4, "link": "리소스 링크4", "subMenuName": "지식 베이스" },
+      { "id": 5, "link": "리소스 링크5", "subMenuName": "Marketplace" },
+      { "id": 6, "link": "리소스 링크6", "subMenuName": "내 계정" },
+      { "id": 7, "link": "리소스 링크7", "subMenuName": "지원 티켓 생성하기" }
     ]
   },
   {
+    "id":3,
     "menuName": "확장 및 학습",
     "list": [
-      { "link": "확장 및 학습 링크1", "subMenuName": "파트너" },
-      { "link": "확장 및 학습 링크2", "subMenuName": "교육 및 인증" },
-      { "link": "확장 및 학습 링크3", "subMenuName": "기술문서 및 매뉴얼" },
-      { "link": "확장 및 학습 링크4", "subMenuName": "개발자 리소스" },
-      { "link": "확장 및 학습 링크5", "subMenuName": "구매 관련 FAQ" },
-      { "link": "확장 및 학습 링크6", "subMenuName": "Enterprise 서비스" },
-      { "link": "확장 및 학습 링크7", "subMenuName": "모든 리소스 보기" }
+      { "id": 1, "link": "확장 및 학습 링크1", "subMenuName": "파트너" },
+      { "id": 2, "link": "확장 및 학습 링크2", "subMenuName": "교육 및 인증" },
+      { "id": 3, "link": "확장 및 학습 링크3", "subMenuName": "기술문서 및 매뉴얼" },
+      { "id": 4, "link": "확장 및 학습 링크4", "subMenuName": "개발자 리소스" },
+      { "id": 5, "link": "확장 및 학습 링크5", "subMenuName": "구매 관련 FAQ" },
+      { "id": 6, "link": "확장 및 학습 링크6", "subMenuName": "Enterprise 서비스" },
+      { "id": 7, "link": "확장 및 학습 링크7", "subMenuName": "모든 리소스 보기" }
     ]
   },
   {
+    "id":4,
     "menuName": "ATLASSIAN 소개",
     "list": [
-      { "link": "ATLASSIAN 소개 링크1", "subMenuName": "회사" },
-      { "link": "ATLASSIAN 소개 링크2", "subMenuName": "구직" },
-      { "link": "ATLASSIAN 소개 링크3", "subMenuName": "이벤트" },
-      { "link": "ATLASSIAN 소개 링크4", "subMenuName": "블로그" },
-      { "link": "ATLASSIAN 소개 링크5", "subMenuName": "투자자 관계" },
-      { "link": "ATLASSIAN 소개 링크6", "subMenuName": "신뢰 및 보안" },
-      { "link": "ATLASSIAN 소개 링크7", "subMenuName": "연락처" }
+      { "id": 1, "link": "ATLASSIAN 소개 링크1", "subMenuName": "회사" },
+      { "id": 2, "link": "ATLASSIAN 소개 링크2", "subMenuName": "구직" },
+      { "id": 3, "link": "ATLASSIAN 소개 링크3", "subMenuName": "이벤트" },
+      { "id": 4, "link": "ATLASSIAN 소개 링크4", "subMenuName": "블로그" },
+      { "id": 5, "link": "ATLASSIAN 소개 링크5", "subMenuName": "투자자 관계" },
+      { "id": 6, "link": "ATLASSIAN 소개 링크6", "subMenuName": "신뢰 및 보안" },
+      { "id": 7, "link": "ATLASSIAN 소개 링크7", "subMenuName": "연락처" }
     ]
   }
 ]

@@ -3,12 +3,13 @@ import Title from './Title';
 import axios from 'axios';
 
 const Faqcard = () => {
-  let [faqList, faqData] = useState([]);
+  const [faqList, setfaqList] = useState([]);
 
   const faqListApi = () => {
     axios
       .get('https://hyunsusora.github.io/jsondata/guide.json')
       .then(function (result) {
+        setfaqList(result.data);
         console.log('응답 성공');
       })
       .catch(function (error) {

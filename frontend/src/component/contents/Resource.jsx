@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const Resource = () => {
-  const [number, setValue] = useState(0);
+  const [number, setNumber] = useState(0);
 
   useEffect(() => {
     console.log('렌더링, 리렌더링 될때마다 실행 됩니다.');
@@ -13,8 +13,8 @@ const Resource = () => {
         <div className="resource-box">
           <strong>
             함수형 컴포넌트 ({number})
-            <button onClick={() => setValue(number + 1)}>+</button>
-            <button onClick={() => setValue(number - 1)}>-</button>
+            <button onClick={() => setNumber(number + 1)}>+</button>
+            <button onClick={() => setNumber(number - 1)}>-</button>
           </strong>
           <p>
             이러한 리소스를 즐겨찾기에 연결하여 동료 Jira Software 사용자와 연결
